@@ -2,13 +2,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // Theme toggle
   const themeToggle = document.getElementById('theme-toggle');
   const body = document.body;
-  const toggle = document.getElementById("menu-toggle");
-  const navLinks = document.querySelector(".nav-link");
-  if (toggle && navLinks) {
-    toggle.addEventListener("click", () => {
-      navLinks.classList.toggle("show");
     });
-  }
+  
 
   function setTheme(dark) {
     if (dark) {
@@ -151,4 +146,12 @@ function animateSnake() {
   requestAnimationFrame(animateSnake);
 }
 animateSnake();
+document.addEventListener("DOMContentLoaded", function() {
+  const toggle = document.getElementById("menu-toggle");
+  const navLinks = document.querySelector(".nav-link");
+  if (toggle && navLinks) {
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  }
 });
