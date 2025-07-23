@@ -1108,3 +1108,37 @@ body.dark .templates-main h1 {
 body.dark .template-card h2 {
   color: #f3f3f3;
 }
+#menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--nav-text);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+    padding: 0 1rem;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  #menu-toggle {
+    display: block;
+  }
+}
