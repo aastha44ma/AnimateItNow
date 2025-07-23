@@ -146,12 +146,12 @@ function animateSnake() {
   requestAnimationFrame(animateSnake);
 }
 animateSnake();
-document.addEventListener("DOMContentLoaded", function() {
-  const toggle = document.getElementById("menu-toggle");
-  const navLinks = document.querySelector(".nav-link");
+document.addEventListener('DOMContentLoaded', function() {
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.querySelector('.nav-link');
   if (toggle && navLinks) {
-    toggle.addEventListener("click", () => {
-      navLinks.classList.toggle("show");
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
     });
   }
 });
